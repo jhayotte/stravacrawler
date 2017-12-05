@@ -2,12 +2,12 @@
 
 This project is a concrete sample of a program that benefit from golang concurrency.
 
-The goal is to grab an HTML value on many pages and do the sum.
+The goal is to grab a HTML value on many pages and do the sum.
 
-`$ go build -race;./stravacrawler https://www.strava.com/activities/1295185809`
+`$ go build -race; ./stravacrawler`
 
 Output:
-```
+```json
 # 1.80
 # 2.80
 # 4.70

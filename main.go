@@ -25,12 +25,12 @@ func main() {
 			}
 			mutex.Lock()
 			result = result + <-d
-			fmt.Println("here: ", result)
+			fmt.Printf("# %.2f \n", result)
 			mutex.Unlock()
 			wg.Done()
 		}(activity)
 	}
 	wg.Wait()
-	fmt.Println("end: ", result)
+	fmt.Printf("end: %.2f km\n", result)
 	return
 }
